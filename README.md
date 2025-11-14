@@ -1,42 +1,59 @@
-A cutting-edge web application focused on delivering a modern UI/UX experience. Built with React and following the latest design principles, this project emphasizes usability, speed, and visual innovation.
+A React application with modern UI/UX design, built using **Tailwind CSS** for responsive styling, animations, and fast development.
 
 Features
 
-- React component-based architecture for clear structure and easy maintenance.[1]
-- Modern folder organization with separation of concerns: `home`, `navbar`, and `pages`.
-- Dedicated `assets` and `fonts` directories for fast branding and personalization.
-- Video and image media support leveraging new frontend performance strategies.
-- CSS using modular, scalable patterns for a sleek interface.
-- Vite as a fast bundler for optimized development and build times.
+* React component-based architecture for reusable, maintainable code.
+* Tailwind CSS for utility-first, responsive layouts.
+* Organized folder structure with dedicated components and pages.
+* Dedicated `assets` and `fonts` directories.
+* Supports image and video media efficiently.
+* Smooth transitions and animations for better user experience.
+* Built with Vite for fast development and optimized builds.
 
 Folder Structure
 
-- **/public** — Fonts, logo, and video assets for quick media access.
-  - **fonts/** — Custom font files for typographic design.
-  - **logo.png, video.mp4** — Media assets for branding and engagement.
-- **/src** — The source code root.
-  - **assets/** — Additional images and static resources.
-  - **components/** — Reusable UI components driving interface consistency.
-    - **home/** — Home page feature components:
-      - `HomeBottom.jsx`, `HomeHeroTop.jsx`, `Video.jsx`
-    - **navbar/** — Navigation UI and transitions for user flow.
-      - `Nav.jsx`, `PageTransition.jsx`
-  - **pages/** — Main routing pages.
-  - `App.jsx`, `main.jsx` — App entry and root logic.
-- **Config & Metadata**
-  - `index.css` — CSS for global design system.
-  - `vite.config.js` — Vite configuration for modern builds.
-  - Linting, environment, and dependency files (`.gitignore`, `eslint.config.js`, `package.json`, etc.).
+```
+/public
+  fonts/           # Custom font files
+  logo.png
+  video.mp4
 
-### Modern Concepts
+/src
+  assets/          # Images and static resources
+  components/
+    home/
+      HomeBottom.jsx
+      HomeHeroTop.jsx
+      Video.jsx
+    navbar/
+      Nav.jsx
+      PageTransition.jsx
+  pages/
+    Agency.jsx
+    Blog.jsx
+    Contact.jsx
+    Home.jsx
+    Work.jsx
+  App.jsx
+  main.jsx
 
-- **Responsive Design:** Mobile-first, adaptive layouts using the latest CSS.
-- **Animated Transitions:** Smooth navigation via `PageTransition.jsx`.
-- **Custom Typography:** Unique font choices elevating brand personality.
-- **Accessibility:** Components built for keyboard and screen-reader support.
-- **Performance Optimization:** Vite + code splitting + asset management.
+index.css          # Tailwind base styles
+vite.config.js     # Vite configuration
+.gitignore
+eslint.config.js
+package.json
+```
 
-### Getting Started
+
+Key Concepts
+
+* Responsive Design: Mobile-first layouts with Tailwind utilities.
+* Animated Transitions: Smooth navigation with `PageTransition.jsx`.
+* Custom Typography: Unique fonts for brand identity.
+* Accessibility: Keyboard navigation and screen-reader support.
+* Performance Optimization: Vite bundler, code splitting, and efficient asset management.
+
+Getting Started
 
 ```bash
 # Install dependencies
@@ -49,16 +66,15 @@ npm run dev
 npm run build
 ```
 
-### Tech Stack
+Tech Stack
 
-- React (JSX)
-- Vite
-- Custom CSS
-- Modern fonts, video assets
+* React (JSX)
+* Tailwind CSS
+* Vite
+* Video & font assets
 
-### Contributing
+Contributing
 
-- Follow the clean component conventions.
-- Embrace new UI/UX strategies.
-- Keep assets and code organized for scalability.
-
+* Follow component-based conventions.
+* Keep folder structure organized.
+* Apply modern UI/UX patterns consistently.
