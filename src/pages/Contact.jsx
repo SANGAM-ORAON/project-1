@@ -5,9 +5,9 @@ export default function Contact() {
   return (
     <PageTransition>
         <Nav/>
-      <h1 className="text-5xl md:text-7xl font-bold text-lime-300 mb-8 text-center">Let’s Connect</h1>
+      <h1 className="text-5xl md:text-7xl font-bold text-lime-300 mb-8 text-center">Let's Connect</h1>
       <p className="text-lg md:text-xl text-gray-300 text-center max-w-2xl mb-12">
-        Have a project in mind? We’d love to collaborate and bring your vision to life.
+        Have a project in mind? We'd love to collaborate and bring your vision to life.
       </p>
 
       <form className="w-full max-w-lg space-y-6">

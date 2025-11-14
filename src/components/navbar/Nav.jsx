@@ -6,7 +6,7 @@ export default function Nav() {
 
   return (
     <nav className="fixed top-0 right-0 w-fit rounded-bl-lg z-50 bg-black text-white font-sans">
-      {/* --- TOP NAVBAR --- */}
+      {/* TOP NAVBAR */}
       <div className="flex rounded-bl-lg hover:bg-lime-300 hover:text-black justify-between items-center px-6 sm:px-8 md:px-10 py-3 sm:py-4">
         {/* Hamburger Button */}
         <button
@@ -19,7 +19,7 @@ export default function Nav() {
         </button>
       </div>
 
-      {/* --- FULLSCREEN MENU --- */}
+      {/* FULLSCREEN MENU */}
       <div
         className={`fixed inset-0 bg-black transition-all duration-500 ${
           isOpen ? "opacity-100 visible" : "opacity-0 invisible"
@@ -35,8 +35,11 @@ export default function Nav() {
 
         {/* Center Menu Links */}
         <div className="flex flex-col justify-center items-center h-full w-full text-5xl sm:text-6xl md:text-7xl font-bold uppercase">
-          {/* Each menu item with full-width border line */}
+          
+          {/* Link */}
           <Link to="/" className="block py-5 w-full border-white border-t-2 text-center hover:text-lime-300 hover:line-through transition-all duration-300" onClick={() => setIsOpen(false)}>Home</Link>
+
+          {/* Each menu item with full-width border line */}
           {["Work", "Agency", "Contact", "Blog"].map((item, index) => (
             
             <div key={index} className="w-full">
